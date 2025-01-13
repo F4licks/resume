@@ -1,6 +1,6 @@
-
-<img src="https://yt3.googleusercontent.com/ytc/AIdro_lqcW7QiirwWk-U6Av4djDjf0TGNWFdg2PCBFRIIXDN878=s900-c-k-c0x00ffffff-no-rj" width="500" height="500">
-
+<div id="header" align="center">
+  <img src="https://yt3.googleusercontent.com/ytc/AIdro_lqcW7QiirwWk-U6Av4djDjf0TGNWFdg2PCBFRIIXDN878=s900-c-k-c0x00ffffff-no-rj" width="500" height="500">
+</div>
 
 ## Скрипты очистки
 - **-** **`clean.sh`** - Короткий скрипт на bash который удаляет все файлы из таких папок как **Видео, Загрузоки, Изображения, Музыка и Корзины**, а также обновляет кэш репозиториев и устанавливает последние обновления. **После окончания обновления скрипт выключает компьютер!!!**
