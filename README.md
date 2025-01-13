@@ -2,7 +2,7 @@
   <img src="https://yt3.googleusercontent.com/ytc/AIdro_lqcW7QiirwWk-U6Av4djDjf0TGNWFdg2PCBFRIIXDN878=s900-c-k-c0x00ffffff-no-rj" width="500" height="500">
 </div>
 
-<p>
+<p align="center">
   <img scr="https://img.shields.io/badge/bash-scripts-blue">
 </p>
 
