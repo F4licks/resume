@@ -1,5 +1,5 @@
 
-<img src="https://yt3.googleusercontent.com/ytc/AIdro_lqcW7QiirwWk-U6Av4djDjf0TGNWFdg2PCBFRIIXDN878=s900-c-k-c0x00ffffff-no-rj" width="300" height="500">
+<img src="https://yt3.googleusercontent.com/ytc/AIdro_lqcW7QiirwWk-U6Av4djDjf0TGNWFdg2PCBFRIIXDN878=s900-c-k-c0x00ffffff-no-rj" width="500" height="500">
 
 
 ## Скрипты очистки
