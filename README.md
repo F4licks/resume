@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <img scr="https://img.shields.io/badge/bash-scripts-blue">
+  <img scr="https://img.shields.io/badge/bash-scripts-blue" alt="python">
 </p>
 
 
