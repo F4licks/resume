@@ -7,7 +7,9 @@
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
   <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
 </p>
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Полезные ссылки
   ### Github на репозиторий с алгоротмизацией
   https://github.com/F4licks/Bryakin-A.-N._algorotmization
