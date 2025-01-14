@@ -1,7 +1,7 @@
 #!/bin/bash
 USER_NAME='kabinet202'  # Замените на ваше имя пользователя
 Ip_l='ip.txt'
-COMM="/home/$USER/Загрузки/install_apps.sh"
+COMM="/home/$USER/Загрузки/<Ваш скрипт>"
 
 # Подсчет количества IP-адресов в файле
 ip_count=$(wc -l < "$Ip_l")
