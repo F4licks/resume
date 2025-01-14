@@ -7,5 +7,12 @@
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
   <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
 </p>
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Полезные ссылки
+  ### Github на репозиторий с алгоротмизацией
+  https://github.com/F4licks/Bryakin-A.-N._algorotmization
+  ### Мой google drive
+  https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
+  ### Github на репозиторий PredmetyLN
+  https://github.com/F4licks/PredmetyLN
 
