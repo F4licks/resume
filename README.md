@@ -5,6 +5,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/bash-scripts-blue" alt="python">
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
+  <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
 </p>
 
 
