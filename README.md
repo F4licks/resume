@@ -13,8 +13,6 @@
 ## Полезные ссылки
   ### Github на репозиторий с алгоротмизацией
   https://github.com/F4licks/Bryakin-A.-N._algorotmization
-  ### Github на репозиторий PredmetyLN
-  https://github.com/F4licks/PredmetyLN
   ### Мой google drive
   https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
 
