@@ -1,3 +1,5 @@
 ## Скачивание через ssh подключение
   ## запукс скрипта
-  ```bash Ip_ssh_settings.sh```
+  ```
+  bash Ip_ssh_settings.sh
+  ```
