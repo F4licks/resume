@@ -6,7 +6,15 @@
   <img src="https://img.shields.io/badge/bash-scripts-blue" id="bash-script" alt="bash_script">
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
   <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
+  <script>
+  document.getElementById("bash_script").onclick = function() {
+      window.location.href = "https://habr.com/ru/companies/ruvds/articles/325522/";
+  };
+  </script>
 </p>
+
+  
+
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -16,10 +24,3 @@
   ### Мой google drive
   https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
 
-<a>
-  <script>
-  document.getElementById("bash_script").onclick = function() {
-      window.location.href = "https://habr.com/ru/companies/ruvds/articles/325522/";
-  };
-  </script>
-</a>
