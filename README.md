@@ -9,6 +9,7 @@
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
   <a href="https://redos.red-soft.ru">
     <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
+    <img src="https://img.shields.io/badge/python-linux-blue" alt="python">
   </a>
 </p>
 
