@@ -3,7 +3,9 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/bash-scripts-blue" id="bash-script" alt="bash_script">
+  <a href="bash-script">
+    <img src="https://img.shields.io/badge/bash-scripts-blue" id="bash-script" alt="bash_script">
+  </a>
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
   <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
 </p>
