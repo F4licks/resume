@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <a href="bash-script">
+  <a href="https://habr.com/ru/companies/ruvds/articles/325522/">
     <img src="https://img.shields.io/badge/bash-scripts-blue" id="bash-script" alt="bash_script">
   </a>
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
