@@ -16,9 +16,10 @@
   ### Мой google drive
   https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
 
-
-<script>
-document.getElementById("bash_script").onclick = function() {
-    window.location.href = "https://habr.com/ru/companies/ruvds/articles/325522/";
-};
-</script>
+<a>
+  <script>
+  document.getElementById("bash_script").onclick = function() {
+      window.location.href = "https://habr.com/ru/companies/ruvds/articles/325522/";
+  };
+  </script>
+</a>
