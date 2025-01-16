@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/bash-scripts-blue" alt="bash-script">
+  <img src="https://img.shields.io/badge/bash-scripts-blue" id="bash-script" alt="bash_script">
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
   <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
 </p>
@@ -18,7 +18,7 @@
 
 
 <script>
-document.getElementById("bash-script").onclick = function() {
+document.getElementById("bash_script").onclick = function() {
     window.location.href = "https://habr.com/ru/companies/ruvds/articles/325522/";
 };
 </script>
