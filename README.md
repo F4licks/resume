@@ -7,9 +7,9 @@
     <img src="https://img.shields.io/badge/bash-scripts-blue" id="bash-script" alt="bash_script">
   </a>
   <img src="https://img.shields.io/badge/bash-authomation-8A2BE2" alt="bash-authomation">
-  <b href="https://redos.red-soft.ru">
+  <a href="https://redos.red-soft.ru">
     <img src="https://img.shields.io/badge/linux-redos-red" alt="linux-redos">
-  </b>
+  </a>
 </p>
 
   
