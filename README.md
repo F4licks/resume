@@ -23,6 +23,8 @@
   https://github.com/F4licks/Bryakin-A.-N._algorotmization
   ### Мой google drive
   https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
+  ### Tg_bot
+  https://colab.research.google.com/drive/125Cn5okp6SUX6N56UFw-ycGmsfPrNtU0?authuser=1#scrollTo=9jEyK7yZjzFO
 
 ## Datebase
   В этой директории находятся готовые базы данных, созданные мной в периода обучения на первом курсе.
