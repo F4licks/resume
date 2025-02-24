@@ -24,7 +24,7 @@
   ### Мой google drive
   https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
   ### Tg_bot
-  https://colab.research.google.com/drive/125Cn5okp6SUX6N56UFw-ycGmsfPrNtU0?authuser=1#scrollTo=9jEyK7yZjzFO - 
+  https://colab.research.google.com/drive/125Cn5okp6SUX6N56UFw-ycGmsfPrNtU0?authuser=1#scrollTo=9jEyK7yZjzFO - задумка
   #### Тестовый маленький помошник Санты
   @test_lit_sant_bot
   код пока делаю в vs code потом перемещю на pythonanywhere
