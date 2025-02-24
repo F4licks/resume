@@ -25,6 +25,9 @@
   https://drive.google.com/drive/folders/1-0snXmDuY1JkEpFP5U6BCMKeAMYlZQ6Q?usp=drive_link
   ### Tg_bot
   https://colab.research.google.com/drive/125Cn5okp6SUX6N56UFw-ycGmsfPrNtU0?authuser=1#scrollTo=9jEyK7yZjzFO
+  #### Тестовый маленький помошник Санты
+  @test_lit_sant_bot
+  
 
 ## Datebase
   В этой директории находятся готовые базы данных, созданные мной в периода обучения на первом курсе.
