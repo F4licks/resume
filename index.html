@@ -20,6 +20,7 @@
             --border: #2a2a3a;
             --border-glow: rgba(176, 38, 255, 0.15);
             --success: #00f0c8;
+            --warning: #f0b000;
         }
 
         * {
@@ -422,7 +423,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 1.5rem;
         }
 
@@ -434,6 +435,8 @@
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card::after {
@@ -458,17 +461,34 @@
             opacity: 0.1;
         }
 
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
         .project-status {
             display: inline-block;
             font-size: 0.7rem;
             padding: 0.3rem 0.8rem;
             border-radius: 20px;
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 1px;
+        }
+
+        .status-dev {
             background: rgba(0, 240, 200, 0.1);
             color: var(--success);
             border: 1px solid var(--success);
-            margin-bottom: 1rem;
-            font-family: 'Orbitron', monospace;
-            letter-spacing: 1px;
+        }
+
+        .status-done {
+            background: rgba(176, 38, 255, 0.1);
+            color: var(--accent);
+            border: 1px solid var(--accent-dim);
         }
 
         .project-name {
@@ -481,6 +501,68 @@
         .project-desc {
             color: var(--text-secondary);
             font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            background: rgba(176, 38, 255, 0.08);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 0.5px;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 1px;
+        }
+
+        .project-link:hover {
+            color: var(--text-primary);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .project-gallery img:hover {
+            border-color: var(--accent-dim);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--border-glow);
         }
 
         .timeline {
@@ -690,7 +772,6 @@
             transform: translateY(0);
         }
 
-        /* Lightbox */
         .lightbox {
             display: none;
             position: fixed;
@@ -732,6 +813,22 @@
         .lightbox-close:hover {
             opacity: 1;
             color: var(--accent);
+        }
+
+        .avatar-fallback {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-dim), var(--accent));
+            border: 3px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Orbitron', monospace;
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--bg-primary);
+            box-shadow: 0 0 40px var(--accent-glow);
         }
 
         @media (max-width: 768px) {
@@ -781,6 +878,14 @@
             .certs-grid {
                 grid-template-columns: 1fr;
             }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-gallery {
+                grid-template-columns: 1fr;
+            }
         }
 
         .glitch-hover:hover {
@@ -814,8 +919,13 @@
 
     <section class="hero" id="about">
         <div class="hero-content fade-in">
-            <div class="hero-avatar">
-                <img src="assets/avatars/Th4F0x_imag.jpg" alt="Брякин Антон">
+            <div class="hero-avatar" id="avatarContainer">
+                <img src="assets/avatars/Th4F0x_imag.jpg" 
+                     alt="Брякин Антон" 
+                     onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='flex';">
+                <div id="avatarFallback" class="avatar-fallback" style="display: none;">
+                    <span>БА</span>
+                </div>
             </div>
             <div class="hero-text">
                 <h1>Брякин Антон</h1>
@@ -946,11 +1056,134 @@
     <section id="projects" class="fade-in">
         <h2 class="section-title">Проекты</h2>
         <div class="projects-grid">
+            
             <div class="project-card">
-                <span class="project-status">В РАЗРАБОТКЕ</span>
+                <div class="project-header">
+                    <span class="project-status status-dev">В РАЗРАБОТКЕ</span>
+                </div>
                 <h3 class="project-name">NetNexus</h3>
-                <p class="project-desc">Проект находится в стадии зарождения. Следите за обновлениями на GitHub.</p>
+                <p class="project-desc">Основной проект в стадии зарождения. Архитектура высоконагруженной системы.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Rust</span>
+                    <span class="tech-tag">В разработке</span>
+                </div>
             </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">Онлайн магазин</h3>
+                <p class="project-desc">Полноценный интернет-магазин на Django с админ-панелью, профилем пользователя и каталогом товаров.</p>
+                <div class="project-gallery">
+                    <img src="assets/django_project_image/Home_django_project.png" alt="Главная" onclick="openLightbox(this.src)">
+                    <img src="assets/django_project_image/admin_django_project.png" alt="Админка" onclick="openLightbox(this.src)">
+                    <img src="assets/django_project_image/profile_django_project.png" alt="Профиль" onclick="openLightbox(this.src)">
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                </div>
+                <a href="https://github.com/F4licks/Django" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">API Change Parser</h3>
+                <p class="project-desc">API + парсер на Rust, который отслеживает изменения на сайте техникума и уведомляет о них.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Rust</span>
+                    <span class="tech-tag">API</span>
+                    <span class="tech-tag">Парсинг</span>
+                </div>
+                <a href="https://github.com/F4licks/API_change/" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">Hello World NASM</h3>
+                <p class="project-desc">Первая программа на ассемблере NASM для Windows x64. Классический Hello World на низком уровне.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">NASM</span>
+                    <span class="tech-tag">Assembly</span>
+                    <span class="tech-tag">Win64</span>
+                </div>
+                <a href="https://github.com/F4licks/Hello_world_nasm_win64/" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">MonitorOFF</h3>
+                <p class="project-desc">Утилита на NASM для отключения питания монитора в Windows x64. Работа с WinAPI на ассемблере.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">NASM</span>
+                    <span class="tech-tag">WinAPI</span>
+                    <span class="tech-tag">Win64</span>
+                </div>
+                <a href="https://github.com/F4licks/MonitorOFF_nasm_win64" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">IMT Calculator</h3>
+                <p class="project-desc">Калькулятор ИМТ (индекса массы тела) на Java. Определяет наличие избыточного веса.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Desktop</span>
+                </div>
+                <a href="https://github.com/F4licks/claculatorIMT_java/" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">Temperature Converter</h3>
+                <p class="project-desc">Конвертер температур на Java. Перевод между шкалами Цельсия, Фаренгейта и Кельвина.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Desktop</span>
+                </div>
+                <a href="https://github.com/F4licks/converter_temperatur_java" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <span class="project-status status-done">ЗАВЕРШЁН</span>
+                </div>
+                <h3 class="project-name">NetDBManager</h3>
+                <p class="project-desc">Тестовое API + база данных для проекта NetNexus. Управление данными на Rust.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Rust</span>
+                    <span class="tech-tag">API</span>
+                    <span class="tech-tag">БД</span>
+                </div>
+                <a href="https://github.com/F4licks/NetDBManeger_Rust/" target="_blank" class="project-link">
+                    → Открыть на GitHub
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -1061,10 +1294,9 @@
         <p>© 2026 <span>Брякин Антон</span> // Backend Developer // <span>Rust</span> // МСК</p>
     </footer>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close">✕</span>
-        <img src="" alt="Сертификат" id="lightboxImg">
+        <img src="" alt="Просмотр" id="lightboxImg">
     </div>
 
     <script>
@@ -1135,7 +1367,6 @@
             setTimeout(typeEffect, 500);
         });
 
-        // Lightbox
         function openLightbox(src) {
             const lightbox = document.getElementById('lightbox');
             const img = document.getElementById('lightboxImg');
